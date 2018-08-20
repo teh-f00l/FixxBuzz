@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+<p id="display"></p>
+
+<script>
+
+
+    /// display colors///
+
+        var names = ["Blue", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow " ];
+        o = ["th", "st", "nd", "rd"];
+
+        for(var i = 0; i< names.length; i++){
+            if (i == 0){
+                document.getElementById('demo').innerHTML += names[i] + ' is ' + '1' + o[1] + '<br>';
+
+            }
+            else if (i == 1){
+                document.getElementById('demo').innerHTML += names[i] + ' is ' + '2' + o[2]+ '<br>';
+            }
+
+             else if (i == 2){
+                document.getElementById('demo').innerHTML += names[i] + ' is ' +'3' + o[3]+ '<br>';
+            }
+
+            else{
+                document.getElementById('demo').innerHTML += names[i] + ' is ' + (i+1) + o[0]+ '<br>';;
+
+
+            }
+
+        }
+    
+
+        /// Fizz Buzz ////
+
+        var count = 1;
+        // var x = ' '
+        while (count <= 100) {
+            if (count % 3 == 0 && count % 5 == 0){
+                console.log("fixxBuzz");
+                var x = 'fixxBuzz'
+                // console.log(typeof(x));
+
+            }
+
+            else if (count % 3 == 0) {
+                var x = 'fixx'
+                // console.log(typeof(x));
+            }
+
+            else if (count % 5 == 0){
+                var x = 'buzz'
+                // console.log(typeof(x));
+
+            }
+            else{
+                // console.log(count);
+                var x = String(count);
+                // console.log(typeof(x));
+
+            }
+            document.getElementById('display').innerHTML += x + '<br>';
+            count ++;
+
+        }
+        
+                // var  count = 1;
+        
+        // while (count <= 100) {
+        //     if (count  % 2 == 0) {
+        //         document.getElementById('display').innerHTML += count + ' is even<br>';
+        //     }
+        //     else {
+        //         document.getElementById('display').innerHTML += count + ' is odd<br>';
+        //     }
+        //     count++
+        // }
+
+        // count = 1;
+        // var sum = 0;
+        // while (count <= 5) {
+        //     sum += count;
+        //     console.log(sum);
+        //     count++;
+            
+        // }
+
+</script>
+
+</body>
+</html> 
